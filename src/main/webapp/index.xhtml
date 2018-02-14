@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <ui:insert  name="styles">
+            <ui:include src="/sections/headerTags.xhtml" />
+        </ui:insert>
+        <h:outputStylesheet library="webjars" name="bootstrap/3.3.7-1/css/bootstrap.min-jsf.css" />
+        <h:outputStylesheet library="webjars" name="bootstrap/3.3.7-1/css/bootstrap-theme.min-jsf.css" />
+        <title>Danielfg.com</title>
+    </h:head>
+    <h:body>
+        <div class="container">
+            <div class="row">
+                <h:form>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4" id="center">
+                        <div class="form">
+                            <h:outputLabel for="email" value="Company" />
+                            <h:inputText id="company" class="form-control"
+                                         value="#{recruters.recruter.company}"
+                                         required="true"
+                                         size="5"
+                                         requiredMessage="Please provide some details.">
+                            </h:inputText>
+                            <br></br>
+                            <h:outputLabel for="loginpassword" value="Name "/>
+                            <h:inputText id="Name" class="form-control"                                        
+                                         required="false"
+                                         value="#{recruters.recruter.name}">
+
+                            </h:inputText>
+                            <br></br>
+
+                            <h:commandButton value="Thanks!" 
+                                             class="btn btn-primary btn-lg btn-block" 
+                                             type="submit"  action="#{recruters.getAccess()}"/>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p:messages id="messages" showDetail="false" autoUpdate="true" />
+                    </div>
+                </h:form>
+            </div>
+        </div>
+    </h:body>
+</html>
+

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <ui:insert  name="styles">
+            <ui:include src="/sections/headerTags.xhtml" />
+        </ui:insert>
+        <h:outputStylesheet library="webjars" name="bootstrap/3.3.7-1/css/bootstrap.min-jsf.css" />
+        <h:outputStylesheet library="webjars" name="bootstrap/3.3.7-1/css/bootstrap-theme.min-jsf.css" />
+        <title>Danielfg.com</title>
+    </h:head>
+    <h:body>
+        <div class="container">
+            <div class="row">
+                <h:form>
+                    <div class="col-md-2">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <h:commandLink action="#{recruters.getGITLAB()}" >
+                                    <h:graphicImage library="social-icons" 
+                                                    name="gitlab96.png"/>
+                                </h:commandLink>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <h:commandLink action="#{recruters.getGITHUB()}" >
+                                    <h:graphicImage library="social-icons" 
+                                                    name="github96.png"/>
+                                </h:commandLink>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2">
+                                <h:commandLink action="#{recruters.getLINKEDIN()}" >
+                                    <h:graphicImage library="social-icons" 
+                                                    name="linkedin96.png"/>
+                                </h:commandLink>
+                            </div>
+
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-2">
+                                <h:commandLink action="#{recruters.getCODEPEN()}" >
+                                    <h:graphicImage library="social-icons" 
+                                                    name="codepen-.svg" style="width: 95px;"/>
+                                </h:commandLink>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-8">                      
+                        <object type="application/pdf" data="./resources/cv/DanielFloresResume.pdf" height="750em" width="1000em" internalinstanceid="10">
+                            Your browser can't display pdf, <a href="./resources/cv/DanielFloresResume.pdf">click</a> to download pdf instead.
+                        </object>
+                    </div>
+                    <div class="col-md-2">
+                    
+                    </div>
+                </h:form>
+            </div>
+        </div>
+    </h:body>
+</html>
+
