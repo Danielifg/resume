@@ -1,18 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
 .container{
+    position: fixed;
     width: 100%;
     height: 100%;
+      background: url(images/lake.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     
 }
 .label{
     font-size: 20px;
 }
 .form { 
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
     border-radius: 10px;
-    padding: 50px;
-    margin-top: 10em;
-  background: url(images/backPattern.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    padding:30px;
+    margin-top: 5em;
+ background:rgba(255,255,255, .25);
+    
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    filter:progid:DXImageTransform.Microsoft.dropshadow(
+        OffX=2px, OffY=4px, Color='black', Positive='false'
+        ); /* IE 5.5 */ 
+    border-collapse: separate; /* Required by IE 9 */
+    box-sizing: border-box;
+}
+.watermarkFix{
+    position: fixed;
+    width:100%;
+    height: 100%;
+  
+}
+.col-md-8{
+    left: 10%;
+     position: fixed;
+    width:100%;
+    height: 100%;
+}
+.pdf{
+    width:80%;
+        height:100%;
 }
