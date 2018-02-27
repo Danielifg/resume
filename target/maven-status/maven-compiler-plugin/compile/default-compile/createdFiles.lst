@@ -1,3 +1,4 @@
-com/mycompany/portfolio/UI/RecrutersUI.class
-com/mycompany/portfolio/entities/Recruters.class
-com/mycompany/portfolio/util/MessagesUtil.class
+com/studio/portfolio/ui/RecrutersUI.class
+com/studio/portfolio/util/MessagesUtil.class
+com/studio/portfolio/entities/Recruters.class
+com/studio/portfolio/dao/MongoAccess.class

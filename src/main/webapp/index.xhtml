@@ -22,7 +22,7 @@
                     <div class="col-md-4"></div>
                     <div class="col-md-4" id="center">
                         <div class="form">
-                            <h:outputLabel for="email" value="Company" />
+                            <h:outputLabel class="label" for="email" value="Company" />
                             <h:inputText id="company" class="form-control"
                                          value="#{recruters.recruter.company}"
                                          required="true"
@@ -30,7 +30,7 @@
                                          requiredMessage="Please provide some details.">
                             </h:inputText>
                             <br></br>
-                            <h:outputLabel for="loginpassword" value="Name "/>
+                            <h:outputLabel class="label" for="loginpassword" value="Name "/>
                             <h:inputText id="Name" class="form-control"                                        
                                          required="false"
                                          value="#{recruters.recruter.name}">
@@ -38,7 +38,7 @@
                             </h:inputText>
                             <br></br>
 
-                            <h:commandButton value="Submit" 
+                            <h:commandButton value="Submit" id="submit"
                                              class="btn btn-primary btn-lg btn-block" 
                                              type="submit"  action="#{recruters.getAccess()}"/>
 

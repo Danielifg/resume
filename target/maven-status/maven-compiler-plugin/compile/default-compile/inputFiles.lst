@@ -1,3 +1,4 @@
-/home/null/NetBeansProjects/resume/src/main/java/com/mycompany/portfolio/util/MessagesUtil.java
-/home/null/NetBeansProjects/resume/src/main/java/com/mycompany/portfolio/UI/RecrutersUI.java
-/home/null/NetBeansProjects/resume/src/main/java/com/mycompany/portfolio/entities/Recruters.java
+/home/null/NetBeansProjects/resume/src/main/java/com/studio/portfolio/util/MessagesUtil.java
+/home/null/NetBeansProjects/resume/src/main/java/com/studio/portfolio/ui/RecrutersUI.java
+/home/null/NetBeansProjects/resume/src/main/java/com/studio/portfolio/entities/Recruters.java
+/home/null/NetBeansProjects/resume/src/main/java/com/studio/portfolio/dao/MongoAccess.java

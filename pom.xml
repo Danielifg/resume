@@ -15,23 +15,27 @@
     </properties>
     
     <dependencies>      
+
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>       
+
         <!-- PrimeFaces Dependency --> 
-         <dependency>
+        <dependency>
             <groupId>org.primefaces</groupId>
             <artifactId>primefaces</artifactId>
             <version>5.0</version>
         </dependency>
+
         <!-- Bootstrap dependencies -->
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>bootstrap</artifactId>
             <version>3.3.7-1</version>
+
         </dependency>
         <!-- JQuery dependencies -->
         <dependency>
@@ -39,14 +43,44 @@
             <artifactId>jquery</artifactId>
             <version>3.1.1-1</version>
         </dependency>
+
         <!-- FontAwesome dependencies -->
         <dependency>
             <groupId>org.webjars</groupId>
-            <artifactId>font-awesome</artifactId>
+            <artifactId>font-awesome</artifactId><!-- Mongo DB Driver -->
             <version>4.7.0</version>
         </dependency>
+  
+    
+        <!-- Mongo DB Driver -->
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver</artifactId>
+            <version>3.4.3</version>
+        </dependency>
+
     </dependencies>
 
+        <!-- ********************* -->
+        <!-- Dependency Management -->
+        <!-- ********************* -->  
+      
+        <dependencyManagement>
+            <!-- Hibernate OGM -->
+            <dependencies>
+                <dependency>
+                    <groupId>org.hibernate.ogm</groupId>
+                    <artifactId>hibernate-ogm-bom</artifactId>
+                    <version>5.3.0.Final</version>
+                    <type>pom</type>
+                    <scope>import</scope>
+                </dependency>
+            </dependencies>
+        </dependencyManagement>
+        
+        
+        
+        
     <build>
         <plugins>
             <plugin>
