@@ -6,6 +6,7 @@
     //transform: translate(-50%,50%);
     height: 100%;
     border: solid 1px black;
+    display: none;
 
 }
 .label{
@@ -43,7 +44,7 @@
 
     .carousel-img{
         position: absolute;
-      
+      display: none;
         top: 50%;
         -webkit-transform: translateY(-50%) translateX(-50%);
     }
