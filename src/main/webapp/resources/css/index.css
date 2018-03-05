@@ -20,25 +20,31 @@
 }
 
 @media screen and (max-width: 500px) {
-  .form {
-      margin-top:7em;;
+    .form {
+        margin-top:7em;;
 
-    height: 50%;
-    width: 100%;
-    font-size: 2em;
-  }
-  .label{
-      font-size: 2em;
-  }
-  
-  .btn,
+        height: 50%;
+        width: 100%;
+        font-size: 2em;
+    }
+    .label{
+        font-size: 2em;
+    }
 
-  .form-control{
-      height:3em;
-      font-size: 1em;
-  }
-  #submit{
-      font-size: 2em;
-  }
-  
+    .btn,
+
+    .form-control{
+        height:3em;
+        font-size: 1em;
+    }
+    #submit{
+        font-size: 2em;
+    }
+
+    .carousel-img{
+        position: absolute;
+      
+        top: 50%;
+        -webkit-transform: translateY(-50%) translateX(-50%);
+    }
 }

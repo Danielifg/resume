@@ -28,6 +28,7 @@ public class RecrutersUI implements Serializable {
     private final String GITHUB = "https://www.github.com/Danielifg";
     private final String LINKEDIN = "https://www.linkedin.com/in/Danielifg";
     private final String CODEPEN = "https://codepen.io/danielifguerrero";
+    private final String AC_NEWS = "https://www.businesswire.com/news/home/20140926005028/en/NeXovation-Launches-Impactivate-Networks-Atlantic-City";
 
     @Inject
     private Recruters recruter;
@@ -78,4 +79,9 @@ public class RecrutersUI implements Serializable {
         response.sendRedirect(CODEPEN);        
     }
 
+    public void getAC_NEWS() throws IOException{
+         HttpServletResponse response
+                = (HttpServletResponse) FacesContext.getCurrentInstance().getExternalContext().getResponse();
+        response.sendRedirect(AC_NEWS);
+    }
 }
