@@ -19,33 +19,11 @@
     height: 100%;
 
 }
+/*
+.project-section{
+    -webkit-column-count: 2;  Chrome, Safari, Opera 
+    -moz-column-count: 2;  Firefox 
+    column-count: 2;
 
-@media screen and (max-width: 500px) {
-    .form {
-        margin-top:7em;;
-
-        height: 50%;
-        width: 100%;
-        font-size: 2em;
-    }
-    .label{
-        font-size: 2em;
-    }
-
-    .btn,
-
-    .form-control{
-        height:3em;
-        font-size: 1em;
-    }
-    #submit{
-        font-size: 2em;
-    }
-
-    .carousel-img{
-        position: absolute;
-      display: none;
-        top: 50%;
-        -webkit-transform: translateY(-50%) translateX(-50%);
-    }
-}
+        
+}*/
